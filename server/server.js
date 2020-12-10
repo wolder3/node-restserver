@@ -12,13 +12,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(require("./routes/usuario"));
+//Configuracion global de rutas
+app.use(require("./routes/index"));
 
 app.get("/", function(req, res) {
     res.send("Hello World");
 });
-
-console.log(process.env.URLDB);
 
 mongoose.connect(
     process.env.URLDB, {
