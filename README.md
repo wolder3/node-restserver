@@ -1,3 +1,3 @@
-## Proyecto de curso
+## Proyecto
 
 `node server/server`
